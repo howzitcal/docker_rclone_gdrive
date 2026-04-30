@@ -1,0 +1,18 @@
+# Simple Google Drive in a docker container
+
+uses rclone to mount your google drive to $HOME/gdrive
+
+Steps:
+1. make sure you have a rclone.conf in the project dir, it should look like this
+```
+[gdrive]
+type = drive
+client_id = xxx
+client_secret = yyy
+scope = drive
+token = {"access_token":"zzz" ...}
+team_drive = 
+
+```
+2. `./run.sh`
+3. enjoy!
