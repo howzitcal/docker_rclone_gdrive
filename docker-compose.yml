@@ -1,0 +1,15 @@
+services:
+  rclone:
+    build: .
+    restart: always
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse:/dev/fuse
+    volumes:
+      - ./rclone.conf:/root/.config/rclone/rclone.conf:rw
+      - type: bind
+        source: $HOME/gdrive
+        target: /root/gdrive
+        bind:
+          propagation: rshared
