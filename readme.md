@@ -3,7 +3,7 @@
 uses rclone to mount your google drive to $HOME/gdrive
 
 Steps:
-1. make sure you have a rclone.conf in the project dir, it should look like this
+1. Make sure you have a rclone.conf in the project dir, it should look like this
 ```
 [gdrive]
 type = drive
