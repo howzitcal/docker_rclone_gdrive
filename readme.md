@@ -1,4 +1,4 @@
-# Simple Google Drive in a docker container
+# Simple Google Drive in a docker container via rclone on alpine linux
 
 uses rclone to mount your google drive to $HOME/gdrive
 
@@ -14,5 +14,7 @@ token = {"access_token":"zzz" ...}
 team_drive = 
 
 ```
+suggestion, rather install rclone locally to generate the rclone.conf, then copy it to this dir.
+
 2. `./run.sh`
 3. enjoy!
